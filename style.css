@@ -1301,11 +1301,47 @@ margin-top:40px;
 
 /* FOOTER */
 
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
+.footer {
+  background: #0b0b0b;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
 }
 
 
@@ -2047,19 +2083,27 @@ align-items:center;
 .language-dropdown:hover .lang-menu {
   display: block;
 }
-/* REMOVE BARRA SUPERIOR DO GOOGLE */
+/* ESCONDE COMPLETAMENTE A BARRA DO GOOGLE */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
 body {
   top: 0px !important;
+  position: static !important;
 }
 
-.goog-te-banner-frame {
-  display: none !important;
+/* REMOVE ESPAÇO NO TOPO */
+html {
+  margin-top: 0px !important;
 }
 
-.goog-logo-link {
-  display: none !important;
-}
-
+/* ESCONDE O SELECT DO GOOGLE */
 .goog-te-gadget {
-  font-size: 0 !important;
+  display: none !important;
+}
+
+/* ESCONDE QUALQUER RESTO */
+.skiptranslate {
+  display: none !important;
 }
