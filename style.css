@@ -460,12 +460,15 @@ text-decoration:none;
 /* NÚMEROS MAIS COMPACTOS */
 .numeros {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  justify-content: space-between; /* distribui bem */
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .numero-item {
-  text-align: left;
+  flex: 1; /* cada um ocupa espaço igual */
+  text-align: center;
 }
 
 .numero-item h3 {
@@ -481,9 +484,9 @@ text-decoration:none;
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-
   .numeros {
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .numero-item {
