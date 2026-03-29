@@ -123,7 +123,7 @@ nav.active {
 
 .hero{
 background-image:url("assets/hero-estrada.jpg");
-background-size:110%;
+background-size:70%;
 background-position:center;
 height:550px;
 display:flex;
