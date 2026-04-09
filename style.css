@@ -350,53 +350,116 @@ box-shadow:0 3px 10px rgba(0,0,0,0.1);
 
 /* AVALIAÇÕES */
 
-.avaliacoes{
-padding:80px 20px;
-background:#000;
-text-align:center;
+/* SEÇÃO */
+.avaliacoes {
+  padding: 80px 20px;
+  background: #000;
+  text-align: center;
 }
 
-.avaliacoes-sub{
-color:#bbb;
-margin-bottom:40px;
+/* SUBTEXTO */
+.avaliacoes-sub {
+  color: #bbb;
+  margin-bottom: 40px;
+  font-size: 15px;
 }
 
-.avaliacoes-resumo{
-display:flex;
-justify-content:center;
-gap:40px;
-margin-bottom:40px;
-flex-wrap:wrap;
+/* RESUMO (nota + cards) */
+.avaliacoes-resumo {
+  display: flex;
+  flex-direction: column; /* 🔥 joga tudo pra vertical */
+  align-items: center;
+  gap: 30px;
 }
 
-.nota-google{
-background:#111;
-padding:20px 35px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.6);
+/* BLOCO DA NOTA */
+.nota-google {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  width: 250px;
+  height: fit-content;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
-.nota{
-font-size:28px;
-color:#d4af37;
-font-weight:bold;
+.nota {
+  font-size: 32px;
+  color: #d4af37;
+  font-weight: bold;
 }
 
-.botao-avaliar{
-background:#d4af37;
-color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
+.nota-google {
+  width: 250px;
+  text-align: center;
 }
 
-.botao-avaliar:hover{
-background:#b9972e;
+/* CONTAINER DOS CARDS */
+.servicos {
+  flex: 1;
 }
 
-.google-widget{
-margin-top:40px;
+/* GRID DE CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap; /* mantém lado a lado */
+}
+/* CARD */
+.card {
+  background: #111;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  transition: 0.3s;
+  max-width: 280px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af37;
+}
+
+/* IMAGEM DO CARD */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* BOTÃO */
+.botao {
+  display: inline-block;
+  margin-top: 30px;
+  background: #d4af37;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #b9972e;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .avaliacoes-resumo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nota-google {
+    width: 220px;
+    flex-shrink: 0;
+  }
+
+  .cards {
+    width: 250px;
+  flex-shrink: 0;
+  }
 }
 
 
@@ -1548,12 +1611,14 @@ color:#bbb;
 margin-bottom:40px;
 }
 
-.avaliacoes-resumo{
-display:flex;
-justify-content:center;
-gap:40px;
-margin-bottom:40px;
-flex-wrap:wrap;
+.avaliacoes-resumo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* 🔥 NÃO QUEBRA LINHA */
 }
 
 .nota-google{
