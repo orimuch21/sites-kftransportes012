@@ -38,8 +38,8 @@ body {
 /* ===== HERO ===== */
 .rota-campos .hero-campos {
   height: 100vh;
-  background: url('assets/rota-campos/campos-do-jordao.webp') center/cover no-repeat;
-  display: flex;
+  background: url('assets/rota-campos/campos.jpg') center/cover no-repeat;
+  display: flex-end;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -57,7 +57,7 @@ body {
   position: relative;
   text-align: center;
   z-index: 2;
-  padding: 40px;
+  padding: 190px;
 }
 
 .rota-campos .hero-content h1 {
