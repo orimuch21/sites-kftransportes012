@@ -1,0 +1,440 @@
+/* ===================================================== */
+/* PACOTES */
+/* ===================================================== */
+
+.categorias-pacotes{
+padding:80px 8%;
+background:#000;
+min-height:100vh;
+}
+
+.pacotes-header{
+text-align:center;
+max-width:850px;
+margin:0 auto 60px auto;
+}
+
+.pacotes-header h1{
+font-size:48px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.pacotes-header p{
+font-size:18px;
+line-height:1.7;
+color:#bcbcbc;
+}
+
+.grid-categorias{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+/* CARD */
+
+.card-categoria{
+position:relative;
+height:430px;
+overflow:hidden;
+border-radius:24px;
+text-decoration:none;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.08);
+background:#111;
+}
+
+.card-categoria:hover{
+transform:translateY(-8px);
+border-color:#d4af37;
+}
+
+.card-categoria img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.5s;
+}
+
+.card-categoria:hover img{
+transform:scale(1.08);
+}
+
+/* OVERLAY */
+
+.overlay-card{
+position:absolute;
+inset:0;
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.96),
+rgba(0,0,0,0.25)
+);
+z-index:1;
+}
+
+/* TEXTO */
+
+.conteudo-card{
+position:absolute;
+bottom:0;
+left:0;
+padding:35px;
+z-index:2;
+}
+
+.conteudo-card span{
+display:inline-block;
+margin-bottom:14px;
+font-size:12px;
+letter-spacing:2px;
+font-weight:bold;
+color:#d4af37;
+}
+
+.conteudo-card h3{
+font-size:36px;
+margin-bottom:15px;
+color:#fff;
+}
+
+.conteudo-card p{
+font-size:16px;
+line-height:1.6;
+color:#d7d7d7;
+margin-bottom:25px;
+}
+
+/* BOTÃO */
+
+.btn-card{
+display:inline-block;
+padding:12px 24px;
+background:#d4af37;
+color:#000;
+border-radius:10px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.card-categoria:hover .btn-card{
+background:#fff;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.categorias-pacotes{
+padding:60px 5%;
+}
+
+.pacotes-header h1{
+font-size:34px;
+}
+
+.pacotes-header p{
+font-size:16px;
+}
+
+.card-categoria{
+height:360px;
+}
+
+.conteudo-card{
+padding:25px;
+}
+
+.conteudo-card h3{
+font-size:28px;
+}
+
+}
+
+/* ===================================================== */
+/* PASSEIOS AÉREOS */
+/* ===================================================== */
+
+.hero-aereo{
+position:relative;
+height:65vh;
+background:url("assets/pacotes/helicoptero-rj.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-aereo-texto{
+position:relative;
+z-index:2;
+max-width:850px;
+padding:20px;
+}
+
+.hero-aereo-texto span{
+color:#d4af37;
+letter-spacing:3px;
+font-weight:bold;
+font-size:13px;
+}
+
+.hero-aereo-texto h1{
+font-size:56px;
+margin:20px 0;
+line-height:1.1;
+}
+
+.hero-aereo-texto p{
+font-size:18px;
+line-height:1.7;
+color:#ddd;
+}
+
+/* CATÁLOGO */
+
+.catalogo-aereo{
+padding:90px 8%;
+display:flex;
+flex-direction:column;
+gap:70px;
+background:#000;
+}
+
+/* BOX */
+
+.passeio-box{
+display:flex;
+gap:50px;
+align-items:center;
+background:#111;
+padding:35px;
+border-radius:24px;
+flex-wrap:wrap;
+border:1px solid rgba(255,255,255,0.06);
+transition:0.3s;
+}
+
+.passeio-box:hover{
+border-color:#d4af37;
+transform:translateY(-4px);
+}
+
+/* CARROSSEL */
+
+.carrossel-aereo{
+position:relative;
+width:100%;
+max-width:520px;
+height:360px;
+overflow:hidden;
+border-radius:20px;
+flex:1;
+min-width:320px;
+}
+
+.carrossel-aereo img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:opacity 1s ease-in-out;
+}
+
+.carrossel-aereo img.ativo{
+opacity:1;
+}
+
+/* INFO */
+
+.passeio-info{
+flex:1;
+min-width:300px;
+}
+
+.passeio-info span{
+color:#d4af37;
+font-weight:bold;
+letter-spacing:2px;
+font-size:13px;
+}
+
+.passeio-info h2{
+font-size:42px;
+margin:15px 0;
+line-height:1.2;
+}
+
+.passeio-info p{
+color:#ccc;
+line-height:1.8;
+margin-bottom:25px;
+font-size:16px;
+}
+
+.passeio-info ul{
+padding-left:18px;
+color:#ddd;
+line-height:2;
+margin-bottom:30px;
+}
+
+.passeio-info li{
+margin-bottom:8px;
+}
+
+/* BOTÃO */
+
+.btn-reserva{
+display:inline-block;
+background:#d4af37;
+color:#000;
+padding:14px 28px;
+border-radius:10px;
+font-weight:bold;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn-reserva:hover{
+background:#fff;
+transform:scale(1.03);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-aereo{
+height:55vh;
+}
+
+.hero-aereo-texto h1{
+font-size:36px;
+}
+
+.hero-aereo-texto p{
+font-size:15px;
+}
+
+.catalogo-aereo{
+padding:60px 5%;
+gap:40px;
+}
+
+.passeio-box{
+padding:20px;
+gap:25px;
+}
+
+.carrossel-aereo{
+height:240px;
+min-width:100%;
+}
+
+.passeio-info h2{
+font-size:30px;
+}
+
+.passeio-info p{
+font-size:15px;
+line-height:1.7;
+}
+
+.btn-reserva{
+width:100%;
+text-align:center;
+}
+
+}
+
+/* ===================================================== */
+/* EXTRA DESTINOS */
+/* ===================================================== */
+
+.extra-destinos{
+position:relative;
+padding:100px 8%;
+background:url("assets/pacotes/extra-destinos.jpg");
+background-size:cover;
+background-position:center;
+text-align:center;
+overflow:hidden;
+}
+
+.extra-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.75);
+}
+
+.extra-conteudo{
+position:relative;
+z-index:2;
+max-width:900px;
+margin:auto;
+}
+
+.extra-conteudo span{
+color:#d4af37;
+font-weight:bold;
+letter-spacing:2px;
+font-size:13px;
+}
+
+.extra-conteudo h2{
+font-size:48px;
+margin:20px 0;
+color:#fff;
+}
+
+.extra-conteudo p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:40px;
+}
+
+.lista-destinos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-bottom:40px;
+}
+
+.lista-destinos div{
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+padding:18px;
+border-radius:14px;
+color:#fff;
+font-weight:500;
+backdrop-filter:blur(5px);
+}
+
+@media(max-width:768px){
+
+.extra-destinos{
+padding:70px 5%;
+}
+
+.extra-conteudo h2{
+font-size:34px;
+}
+
+.extra-conteudo p{
+font-size:16px;
+}
+
+}

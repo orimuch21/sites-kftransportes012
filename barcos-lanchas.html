@@ -2,16 +2,18 @@
 <html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
 
-<title>Pacotes | KF Transportes</title>
+<title>Barcos & Lanchas | KF Transportes</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="pacotes.css">
+
 </head>
 
 <body>
@@ -21,16 +23,18 @@
 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
 <nav id="menu">
-  <button class="close-menu" onclick="toggleMenu()">✕</button>
 
-  <a href="index.html">Home</a>
-  <a href="servicos.html">Serviços</a>
-  <a href="eventos.html">Eventos</a>
-  <a href="pacotes.html">Pacotes</a>
-  <a href="frota.html">Frota</a>
-  <a href="sobre.html">Sobre</a>
-  <a href="contato.html">Contato</a>
-  <a href="rota-campos.html" class="rota-link">Rota Campos</a>
+<button class="close-menu" onclick="toggleMenu()">✕</button>
+
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="eventos.html">Eventos</a>
+<a href="pacotes.html">Pacotes</a>
+<a href="frota.html">Frota</a>
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+<a href="rota-campos.html" class="rota-link">Rota Campos</a>
+
 </nav>
 
 <div class="overlay" onclick="toggleMenu()"></div>
@@ -49,127 +53,162 @@
 
 <div id="google_translate_element" style="display:none;"></div>
 
+
 </header>
 
-<!-- ===================================================== -->
-<!-- CARDS PRINCIPAIS DE PACOTES -->
-<!-- ===================================================== -->
+<!-- HERO -->
 
-<section class="categorias-pacotes">
+<section class="hero-aereo hero-barcos">
 
-<div class="pacotes-header">
+<div class="hero-overlay"></div>
 
-<h1>Experiências, Transfers e Turismo Premium</h1>
+<div class="hero-aereo-texto">
+
+<span>🛥️ EXPERIÊNCIAS NÁUTICAS</span>
+
+<h1>Barcos & Lanchas Exclusivas</h1>
 
 <p>
-Escolha sua experiência com conforto, segurança
-e atendimento premium em São Paulo, Rio de Janeiro
-e principais destinos turísticos do Brasil.
+Experiências premium em Angra dos Reis,
+Paraty, Ilha Grande, Ilhabela, Guarujá e Ubatuba.
 </p>
 
 </div>
 
-<div class="grid-categorias">
+</section>
 
-<!-- PASSEIOS AÉREOS -->
-<a href="passeios-aereos.html" class="card-categoria">
+<!-- CATÁLOGO -->
 
-<div class="overlay-card"></div>
+<section class="catalogo-aereo">
 
-<img src="assets/pacotes/passeio-aereo/helicoptero-rj.jpeg">
+<!-- ANGRA -->
 
-<div class="conteudo-card">
+<div class="passeio-box">
 
-<span>🚁 EXPERIÊNCIAS PREMIUM</span>
+<div class="carrossel-aereo">
 
-<h3>Passeios Aéreos</h3>
+<img src="assets/pacotes/barco-lancha/angra1.jpeg" class="ativo">
+<img src="assets/pacotes/barco-lancha/angra2.jpeg">
+<img src="assets/pacotes/barco-lancha/angra3.jpeg">
+
+</div>
+
+<div class="passeio-info">
+
+<span>🛥️ PASSEIO PREMIUM</span>
+
+<h2>Lancha em Angra dos Reis</h2>
 
 <p>
-Helicópteros, Asa Delta, Parapente
-e voos panorâmicos no Rio de Janeiro
+Explore praias paradisíacas, ilhas exclusivas
+e águas cristalinas com uma experiência
+privativa em Angra dos Reis.
 </p>
 
-<div class="btn-card">
-Explorar
-</div>
+<ul>
+<li> Passeio privativo</li>
+<li> Roteiros personalizados</li>
+<li> Ideal para casais e grupos</li>
+<li> Day Use exclusivo</li>
+</ul>
 
-</div>
-</a> 
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20nos%20Passeios%20de%20Lancha%20em%20Angra%20dos%20Reis."
+class="btn-reserva"
+target="_blank">
 
-<!-- BARCOS -->
-<a href="barcos-lanchas.html" class="card-categoria">
+Reservar Experiência
 
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/barco.webp">
-
-<div class="conteudo-card">
-
-<span>🛥️ PASSEIOS NÁUTICOS</span>
-
-<h3>Barcos & Lanchas</h3>
-
-<p>
-Experiências exclusivas em Angra,
-Paraty, Ilhabela e Ubatuba
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
-</a> 
-
-<!-- CITY TOURS -->
-<a href="city-tours.html" class="card-categoria">
-
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/rj.jpg">
-
-<div class="conteudo-card">
-
-<span>🚐 CITY TOURS</span>
-
-<h3>Experiências Urbanas</h3>
-
-<p>
-Passeios personalizados em São Paulo,
-Rio de Janeiro e Campos do Jordão
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
-</a> 
-
-<!-- BATE E VOLTA -->
-<a href="bate-volta.html" class="card-categoria">
-
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/ubatuba.jpg">
-
-<div class="conteudo-card">
-
-<span>🌴 VIAGENS & PRAIA</span>
-
-<h3>Bate e Volta</h3>
-
-<p>
-Litoral de São Paulo, Rio de Janeiro,
-Cruzeiros e destinos turísticos
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
 </a>
+
+</div>
+
+</div>
+
+<!-- PARATY -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/barco-lancha/paraty1.jpeg" class="ativo">
+<img src="assets/pacotes/barco-lancha/paraty2.jpeg">
+<img src="assets/pacotes/barco-lancha/paraty3.jpeg">
+
+</div>
+
+<div class="passeio-info">
+
+<span>⚓ EXPERIÊNCIA EXCLUSIVA</span>
+
+<h2>Lancha em Paraty</h2>
+
+<p>
+Conheça as ilhas e praias mais bonitas
+de Paraty com roteiros exclusivos
+e embarcações premium.
+</p>
+
+<ul>
+<li> Passeio compartilhado ou privativo</li>
+<li> Paradas para mergulho</li>
+<li> Paisagens paradisíacas</li>
+<li> Saídas diárias</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20nos%20Passeios%20de%20Barco%20em%20Paraty."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
+
+<!-- UBATUBA -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/barco-lancha/ubatuba1.jpeg" class="ativo">
+<img src="assets/pacotes/barco-lancha/ubatuba2.jpeg">
+<img src="assets/pacotes/barco-lancha/ubatuba3.jpeg">
+
+</div>
+
+<div class="passeio-info">
+
+<span>🌊 TOUR EXCLUSIVO</span>
+
+<h2>Lancha em Ubatuba</h2>
+
+<p>
+Viva uma experiência náutica inesquecível
+pelas ilhas e praias mais bonitas
+do litoral norte paulista.
+</p>
+
+<ul>
+<li> Passeios personalizados</li>
+<li> Paradas estratégicas</li>
+<li> Fotos incríveis</li>
+<li> Ideal para grupos</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20nos%20Passeios%20de%20Lancha%20em%20Ubatuba."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -177,35 +216,38 @@ Explorar
 
 <div class="footer-container">
 
-  <div class="footer-col">
-    <h3>KF TRANSPORTES</h3>
-    <p>Transporte executivo para aeroportos, eventos e turismo em todo o Brasil.</p>
-  </div>
+<div class="footer-col">
+<h3>KF TRANSPORTES</h3>
+<p>
+Transporte executivo para aeroportos,
+eventos e turismo em todo o Brasil.
+</p>
+</div>
 
-  <div class="footer-col">
-    <h4>Contato</h4>
-    <p>📞 (16) 98179-4538</p>
-    <p>📍 São Paulo - SP</p>
-    <p>✉️ kftransportes012@gmail.com</p>
-  </div>
+<div class="footer-col">
+<h4>Contato</h4>
+<p>📞 (16) 98179-4538</p>
+<p>📍 São Paulo - SP</p>
+<p>✉️ kftransportes012@gmail.com</p>
+</div>
 
-  <div class="footer-col">
-    <h4>Institucional</h4>
-    <p><a href="sobre.html">Sobre nós</a></p>
-    <p><a href="servicos.html">Serviços</a></p>
-    <p><a href="contato.html">Contato</a></p>
-  </div>
+<div class="footer-col">
+<h4>Institucional</h4>
+<p><a href="sobre.html">Sobre nós</a></p>
+<p><a href="servicos.html">Serviços</a></p>
+<p><a href="contato.html">Contato</a></p>
+</div>
 
-  <div class="footer-col">
-    <h4>Legal</h4>
-    <p>CNPJ: 45.479.378/0001-58</p>
-    <p>Todos os direitos reservados</p>
-  </div>
+<div class="footer-col">
+<h4>Legal</h4>
+<p>CNPJ: 45.479.378/0001-58</p>
+<p>Todos os direitos reservados</p>
+</div>
 
 </div>
 
 <div class="footer-bottom">
-  <p>© 2026 KF Transportes - Transporte Executivo em todo o Brasil</p>
+<p>© 2026 KF Transportes - Transporte Executivo em todo o Brasil</p>
 </div>
 
 <!-- ASSINATURA -->
@@ -219,7 +261,6 @@ Explorar
 </div>
 
 </footer>
-
 
 </script>
 <!-- GOOGLE TRANSLATE -->
@@ -265,6 +306,35 @@ window.addEventListener("load", function() {
 });
 
 </script>
+
+<script>
+
+const carrosseis = document.querySelectorAll(".carrossel-aereo");
+
+carrosseis.forEach(carrossel => {
+
+  const imagens = carrossel.querySelectorAll("img");
+
+  let index = 0;
+
+  setInterval(() => {
+
+    imagens[index].classList.remove("ativo");
+
+    index++;
+
+    if(index >= imagens.length){
+      index = 0;
+    }
+
+    imagens[index].classList.add("ativo");
+
+  }, 3000);
+
+});
+
+</script>
+
 <script>
 const tabs = document.querySelectorAll(".tab");
 const items = document.querySelectorAll(".item");

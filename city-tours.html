@@ -2,16 +2,18 @@
 <html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
 
-<title>Pacotes | KF Transportes</title>
+<title>City Tours | KF Transportes</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="pacotes.css">
+
 </head>
 
 <body>
@@ -21,16 +23,18 @@
 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
 <nav id="menu">
-  <button class="close-menu" onclick="toggleMenu()">✕</button>
 
-  <a href="index.html">Home</a>
-  <a href="servicos.html">Serviços</a>
-  <a href="eventos.html">Eventos</a>
-  <a href="pacotes.html">Pacotes</a>
-  <a href="frota.html">Frota</a>
-  <a href="sobre.html">Sobre</a>
-  <a href="contato.html">Contato</a>
-  <a href="rota-campos.html" class="rota-link">Rota Campos</a>
+<button class="close-menu" onclick="toggleMenu()">✕</button>
+
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="eventos.html">Eventos</a>
+<a href="pacotes.html">Pacotes</a>
+<a href="frota.html">Frota</a>
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+<a href="rota-campos.html" class="rota-link">Rota Campos</a>
+
 </nav>
 
 <div class="overlay" onclick="toggleMenu()"></div>
@@ -49,127 +53,163 @@
 
 <div id="google_translate_element" style="display:none;"></div>
 
+
 </header>
 
-<!-- ===================================================== -->
-<!-- CARDS PRINCIPAIS DE PACOTES -->
-<!-- ===================================================== -->
+<!-- HERO -->
 
-<section class="categorias-pacotes">
+<section class="hero-aereo hero-city">
 
-<div class="pacotes-header">
+<div class="hero-overlay"></div>
 
-<h1>Experiências, Transfers e Turismo Premium</h1>
+<div class="hero-aereo-texto">
+
+<span>🚐 EXPERIÊNCIAS URBANAS</span>
+
+<h1>City Tours Premium</h1>
 
 <p>
-Escolha sua experiência com conforto, segurança
-e atendimento premium em São Paulo, Rio de Janeiro
-e principais destinos turísticos do Brasil.
+Passeios personalizados com conforto,
+segurança e atendimento executivo
+nos principais destinos do Brasil.
 </p>
 
 </div>
 
-<div class="grid-categorias">
+</section>
 
-<!-- PASSEIOS AÉREOS -->
-<a href="passeios-aereos.html" class="card-categoria">
+<!-- CATÁLOGO -->
 
-<div class="overlay-card"></div>
+<section class="catalogo-aereo">
 
-<img src="assets/pacotes/passeio-aereo/helicoptero-rj.jpeg">
+<!-- SÃO PAULO -->
 
-<div class="conteudo-card">
+<div class="passeio-box">
 
-<span>🚁 EXPERIÊNCIAS PREMIUM</span>
+<div class="carrossel-aereo">
 
-<h3>Passeios Aéreos</h3>
+<img src="assets/pacotes/city-tours/sp1.jpg" class="ativo">
+<img src="assets/pacotes/city-tours/sp2.avif">
+<img src="assets/pacotes/city-tours/sp3.jpg">
+
+</div>
+
+<div class="passeio-info">
+
+<span>🏙️ CITY TOUR</span>
+
+<h2>São Paulo Experience</h2>
 
 <p>
-Helicópteros, Asa Delta, Parapente
-e voos panorâmicos no Rio de Janeiro
+Conheça os principais pontos turísticos,
+gastronomia, cultura e vida urbana
+da maior cidade do Brasil.
 </p>
 
-<div class="btn-card">
-Explorar
-</div>
+<ul>
+<li> Avenida Paulista</li>
+<li> Liberdade e Centro Histórico</li>
+<li> Vila Madalena e Beco do Batman</li>
+<li> Roteiro personalizado</li>
+</ul>
 
-</div>
-</a> 
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20City%20Tour%20em%20São%20Paulo."
+class="btn-reserva"
+target="_blank">
 
-<!-- BARCOS -->
-<a href="barcos-lanchas.html" class="card-categoria">
+Reservar Experiência
 
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/barco.webp">
-
-<div class="conteudo-card">
-
-<span>🛥️ PASSEIOS NÁUTICOS</span>
-
-<h3>Barcos & Lanchas</h3>
-
-<p>
-Experiências exclusivas em Angra,
-Paraty, Ilhabela e Ubatuba
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
-</a> 
-
-<!-- CITY TOURS -->
-<a href="city-tours.html" class="card-categoria">
-
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/rj.jpg">
-
-<div class="conteudo-card">
-
-<span>🚐 CITY TOURS</span>
-
-<h3>Experiências Urbanas</h3>
-
-<p>
-Passeios personalizados em São Paulo,
-Rio de Janeiro e Campos do Jordão
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
-</a> 
-
-<!-- BATE E VOLTA -->
-<a href="bate-volta.html" class="card-categoria">
-
-<div class="overlay-card"></div>
-
-<img src="assets/pacotes/ubatuba.jpg">
-
-<div class="conteudo-card">
-
-<span>🌴 VIAGENS & PRAIA</span>
-
-<h3>Bate e Volta</h3>
-
-<p>
-Litoral de São Paulo, Rio de Janeiro,
-Cruzeiros e destinos turísticos
-</p>
-
-<div class="btn-card">
-Explorar
-</div>
-
-</div>
 </a>
+
+</div>
+
+</div>
+
+<!-- RIO -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/city-tours/rj1.jpg" class="ativo">
+<img src="assets/pacotes/city-tours/rj2.jpg">
+<img src="assets/pacotes/city-tours/rj3.webp">
+
+</div>
+
+<div class="passeio-info">
+
+<span>🌴 CITY TOUR PREMIUM</span>
+
+<h2>Rio de Janeiro Experience</h2>
+
+<p>
+Descubra as paisagens mais famosas
+do Rio de Janeiro com conforto,
+segurança e roteiro exclusivo.
+</p>
+
+<ul>
+<li> Cristo Redentor</li>
+<li> Pão de Açúcar</li>
+<li> Copacabana e Ipanema</li>
+<li> Tour privativo</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20City%20Tour%20no%20Rio%20de%20Janeiro."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CAMPOS -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/city-tours/campos1.jpg" class="ativo">
+<img src="assets/pacotes/city-tours/campos2.jpg">
+<img src="assets/pacotes/city-tours/campos3.jpg">
+
+</div>
+
+<div class="passeio-info">
+
+<span>⛰️ EXPERIÊNCIA SERRANA</span>
+
+<h2>Campos do Jordão Experience</h2>
+
+<p>
+Explore os pontos mais famosos
+da Serra da Mantiqueira com
+um passeio exclusivo e confortável.
+</p>
+
+<ul>
+<li> Capivari</li>
+<li> Parque Amantikir</li>
+<li> Morro do Elefante</li>
+<li> Roteiro personalizado</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20City%20Tour%20em%20Campos%20do%20Jordão."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -177,35 +217,41 @@ Explorar
 
 <div class="footer-container">
 
-  <div class="footer-col">
-    <h3>KF TRANSPORTES</h3>
-    <p>Transporte executivo para aeroportos, eventos e turismo em todo o Brasil.</p>
-  </div>
+<div class="footer-col">
 
-  <div class="footer-col">
-    <h4>Contato</h4>
-    <p>📞 (16) 98179-4538</p>
-    <p>📍 São Paulo - SP</p>
-    <p>✉️ kftransportes012@gmail.com</p>
-  </div>
+<h3>KF TRANSPORTES</h3>
 
-  <div class="footer-col">
-    <h4>Institucional</h4>
-    <p><a href="sobre.html">Sobre nós</a></p>
-    <p><a href="servicos.html">Serviços</a></p>
-    <p><a href="contato.html">Contato</a></p>
-  </div>
+<p>
+Transporte executivo para aeroportos,
+eventos e turismo em todo o Brasil.
+</p>
 
-  <div class="footer-col">
-    <h4>Legal</h4>
-    <p>CNPJ: 45.479.378/0001-58</p>
-    <p>Todos os direitos reservados</p>
-  </div>
+</div>
+
+<div class="footer-col">
+<h4>Contato</h4>
+<p>📞 (16) 98179-4538</p>
+<p>📍 São Paulo - SP</p>
+<p>✉️ kftransportes012@gmail.com</p>
+</div>
+
+<div class="footer-col">
+<h4>Institucional</h4>
+<p><a href="sobre.html">Sobre nós</a></p>
+<p><a href="servicos.html">Serviços</a></p>
+<p><a href="contato.html">Contato</a></p>
+</div>
+
+<div class="footer-col">
+<h4>Legal</h4>
+<p>CNPJ: 45.479.378/0001-58</p>
+<p>Todos os direitos reservados</p>
+</div>
 
 </div>
 
 <div class="footer-bottom">
-  <p>© 2026 KF Transportes - Transporte Executivo em todo o Brasil</p>
+<p>© 2026 KF Transportes - Transporte Executivo em todo o Brasil</p>
 </div>
 
 <!-- ASSINATURA -->
@@ -219,7 +265,6 @@ Explorar
 </div>
 
 </footer>
-
 
 </script>
 <!-- GOOGLE TRANSLATE -->
@@ -265,6 +310,35 @@ window.addEventListener("load", function() {
 });
 
 </script>
+
+<script>
+
+const carrosseis = document.querySelectorAll(".carrossel-aereo");
+
+carrosseis.forEach(carrossel => {
+
+  const imagens = carrossel.querySelectorAll("img");
+
+  let index = 0;
+
+  setInterval(() => {
+
+    imagens[index].classList.remove("ativo");
+
+    index++;
+
+    if(index >= imagens.length){
+      index = 0;
+    }
+
+    imagens[index].classList.add("ativo");
+
+  }, 3000);
+
+});
+
+</script>
+
 <script>
 const tabs = document.querySelectorAll(".tab");
 const items = document.querySelectorAll(".item");

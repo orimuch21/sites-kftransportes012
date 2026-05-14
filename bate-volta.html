@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+
+<title>Bate e Volta | KF Transportes</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pacotes.css">
+
+</head>
+
+<body>
+
+<header>
+
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+
+<button class="close-menu" onclick="toggleMenu()">✕</button>
+
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="eventos.html">Eventos</a>
+<a href="pacotes.html">Pacotes</a>
+<a href="frota.html">Frota</a>
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+<a href="rota-campos.html" class="rota-link">Rota Campos</a>
+
+</nav>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<div class="language-dropdown">
+
+  <button class="lang-btn">🌐 IDIOMAS</button>
+
+  <div class="lang-menu">
+    <div onclick="setLanguage('pt')">🇧🇷 Português</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+  </div>
+
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero-aereo hero-bate">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-aereo-texto">
+
+<span>🌴 EXPERIÊNCIAS & PRAIA</span>
+
+<h1>Bate e Volta Premium</h1>
+
+<p>
+Viagens rápidas com conforto,
+segurança e experiências exclusivas
+pelos melhores destinos turísticos.
+</p>
+
+</div>
+
+</section>
+
+<!-- CATÁLOGO -->
+
+<section class="catalogo-aereo">
+
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/litoral-experience.jpg" class="ativo">
+
+</div>
+
+<div class="passeio-info">
+
+<span>🏖️ BATE E VOLTA</span>
+
+<h2>Litoral Experience</h2>
+
+<p>
+Aproveite praias paradisíacas,
+ilhas e experiências exclusivas
+no litoral norte paulista e sul do Rio de Janeiro.
+</p>
+
+<ul>
+<li> Paraty | Angra</li>
+<li> Ubatuba | Ilhabela</li>
+<li> Trajetos personalizados</li>
+<li> Transporte Executivo</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20Bate%20e%20Volta%20para%20Ubatuba."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
+
+<!-- APARECIDA -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/aparecida.webp" class="ativo">
+
+</div>
+
+<div class="passeio-info">
+
+<span>⛪ TURISMO RELIGIOSO</span>
+
+<h2>Aparecida do Norte</h2>
+
+<p>
+Visite o maior centro de fé
+da América Latina com conforto
+e atendimento executivo.
+</p>
+
+<ul>
+<li> Basílica Nacional</li>
+<li> Passeio privativo</li>
+<li> Transporte confortável</li>
+<li> Ideal para famílias e grupos</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20Bate%20e%20Volta%20para%20Aparecida."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CAMPOS -->
+
+<div class="passeio-box">
+
+<div class="carrossel-aereo">
+
+<img src="assets/pacotes/campos.jpg" class="ativo">
+
+</div>
+
+<div class="passeio-info">
+
+<span>⛰️ EXPERIÊNCIA SERRANA</span>
+
+<h2>Campos do Jordão | Monte Verde </h2>
+
+<p>
+Curta um dia completo na Serra
+da Mantiqueira com gastronomia,
+turismo e paisagens incríveis.
+</p>
+
+<ul>
+<li> Vila Capivari</li>
+<li> Morro do Elefante</li>
+<li> Trilha da Pedra Redonda</li>
+<li> Avenida Monte Verde</li>
+</ul>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20tenho%20interesse%20no%20Bate%20e%20Volta%20para%20Campos%20do%20Jordão%20ou%20Monte%20Verde."
+class="btn-reserva"
+target="_blank">
+
+Reservar Experiência
+
+</a>
+
+</div>
+
+</div>
+
+<!-- EXTRA DESTINOS -->
+
+<section class="extra-destinos">
+
+<div class="extra-overlay"></div>
+
+<div class="extra-conteudo">
+
+<span>🌎 DESTINOS PERSONALIZADOS</span>
+
+<h2>Atendemos Diversos Destinos Turísticos</h2>
+
+<p>
+Os destinos apresentados acima são apenas os mais procurados.
+Também realizamos transfers, passeios e viagens personalizadas
+para diversas regiões do Brasil, sempre com conforto,
+segurança e atendimento premium.
+</p>
+
+<div class="lista-destinos">
+
+<div>✔️ Serra Gaúcha</div>
+<div>✔️ Sul de Minas</div>
+<div>✔️ Litoral Norte</div>
+<div>✔️ Interior de São Paulo</div>
+<div>✔️ Costa Verde</div>
+<div>✔️ Destinos Sob Demanda</div>
+
+</div>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin,%20gostaria%20de%20informações%20sobre%20outros%20destinos%20e%20transfers."
+class="btn-reserva"
+target="_blank">
+Consultar Destino
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3>KF TRANSPORTES</h3>
+
+<p>
+Transporte executivo para aeroportos,
+eventos e turismo em todo o Brasil.
+</p>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contato</h4>
+
+<p>📞 (16) 98179-4538</p>
+<p>📍 São Paulo - SP</p>
+<p>✉️ kftransportes012@gmail.com</p>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Institucional</h4>
+
+<p><a href="sobre.html">Sobre nós</a></p>
+<p><a href="servicos.html">Serviços</a></p>
+<p><a href="contato.html">Contato</a></p>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Legal</h4>
+
+<p>CNPJ: 45.479.378/0001-58</p>
+<p>Todos os direitos reservados</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 KF Transportes - Transporte Executivo em todo o Brasil</p>
+
+</div>
+
+<!-- ASSINATURA -->
+<div class="assinatura-dev minimal">
+  <p>
+    Desenvolvido por <strong> WebCore </strong> •
+    <a href="https://wa.me/5512988490983?text=Olá%20Kelvin,%20quero%20um%20site%20profissional!" target="_blank">
+      Criar meu site
+    </a>
+  </p>
+</div>
+
+</footer>
+
+</script>
+<!-- GOOGLE TRANSLATE -->
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'pt',
+    includedLanguages: 'en,es',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- SEUS SCRIPTS DE IDIOMA -->
+<script>
+
+// SALVAR IDIOMA
+function setLanguage(lang) {
+  localStorage.setItem("siteLang", lang);
+  document.cookie = "googtrans=/pt/" + lang + ";path=/";
+  location.reload();
+}
+
+// APLICAR AUTOMATICAMENTE
+function applyLanguage() {
+  const lang = localStorage.getItem("siteLang");
+
+  if (lang) {
+    document.cookie = "googtrans=/pt/" + lang + ";path=/";
+
+    const select = document.querySelector(".goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  }
+}
+// ESPERA CARREGAR
+window.addEventListener("load", function() {
+  setTimeout(applyLanguage, 1000);
+});
+
+</script>
+
+<script>
+
+const carrosseis = document.querySelectorAll(".carrossel-aereo");
+
+carrosseis.forEach(carrossel => {
+
+  const imagens = carrossel.querySelectorAll("img");
+
+  let index = 0;
+
+  setInterval(() => {
+
+    imagens[index].classList.remove("ativo");
+
+    index++;
+
+    if(index >= imagens.length){
+      index = 0;
+    }
+
+    imagens[index].classList.add("ativo");
+
+  }, 3000);
+
+});
+
+</script>
+
+<script>
+const tabs = document.querySelectorAll(".tab");
+const items = document.querySelectorAll(".item");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const categoria = tab.dataset.tab;
+
+    items.forEach(item => {
+
+      if (categoria === "all") {
+        item.style.display = "flex";
+      } else if (item.dataset.categoria === categoria) {
+        item.style.display = "flex";
+      } else {
+        item.style.display = "none";
+      }
+
+    });
+
+  });
+});
+</script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  const overlay = document.querySelector(".overlay");
+
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script>
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+class="whatsapp-fixo" target="_blank">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<path fill="white"
+d="M16 .5C7.5.5.5 7.5.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2c2.2 1.2 4.7 1.9 7.5 1.9 8.5 0 15.5-7 15.5-15.5S24.5.5 16 .5zm0 28c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C4.1 20.7 3.5 18.4 3.5 16 3.5 9.1 9.1 3.5 16 3.5S28.5 9.1 28.5 16 22.9 28.5 16 28.5zm6.9-8.5c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5-.5.3-.9.1c-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6s0-.6.2-.8c.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5-.1-.7-.1-.2-.9-2.2-1.2-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5s-1.3 1.2-1.3 3 1.3 3.6 1.5 3.9c.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.2.7.9.3 1.7.3 2.3.2.7-.1 2.4-1 2.7-2 .3-1 .3-1.9.2-2-.1-.1-.3-.2-.7-.4z" />
+</svg>
+
+</a>
+
+</body>
+</html>
