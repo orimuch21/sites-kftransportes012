@@ -608,3 +608,146 @@ a:focus-visible {
     cursor: pointer;
 }
 
+
+/* CONTACT BUTTONS */
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 28px auto 0;
+}
+
+.contact-buttons .cta-button,
+.contact-buttons .email-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 340px;
+    min-height: 52px;
+    margin: 0;
+    padding: 14px 20px;
+    border: 1px solid #C6A96B;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* WHATSAPP BUTTON */
+
+.contact-buttons .cta-button {
+    background-color: #C6A96B;
+    color: #0B0B0B;
+}
+
+.contact-buttons .cta-button:hover {
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    color: #0B0B0B;
+}
+
+/* EMAIL BUTTON */
+
+.contact-buttons .email-button {
+    background-color: transparent;
+    color: #C6A96B;
+}
+
+.contact-buttons .email-button:hover {
+    background-color: #C6A96B;
+    color: #0B0B0B;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 40px 20px 0;
+    background-color: #0B0B0B;
+    color: #F5F5F5;
+    border-top: 1px solid #C6A96B;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer-col h4 {
+    margin: 0 0 16px;
+    color: #C6A96B;
+    font-size: 16px;
+}
+
+.footer-col p {
+    margin: 10px 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.footer-col a {
+    color: #F5F5F5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #C6A96B;
+}
+
+/* COPYRIGHT AREA */
+
+.site-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 1px solid rgba(198, 169, 107, 0.35);
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 8px 0;
+    color: #BFBFBF;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contact-buttons .cta-button,
+    .contact-buttons .email-button {
+        max-width: 100%;
+    }
+
+    .footer {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+}
+
